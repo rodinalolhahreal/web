@@ -86,3 +86,49 @@ h4 {
     background-color: #00A05D;
 
 }
+.abouta {
+    text-align: center;
+    align-self: center;
+    margin: 200px;
+    font-size: 60px;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+
+
+  input[type=submit] {
+    background-color: #0B3E28;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #00683b;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #2ACC75;
+    padding: 20px;
+  }
+
+  .acont {
+      background-color: #006748;
+  }
+
+  .magi {
+      margin-top: 75px;
+  }
