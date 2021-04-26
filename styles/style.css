@@ -93,9 +93,9 @@ h3 {
 .abouta {
     text-align: center;
     align-self: center;
-    margin-top: 200px;
+    margin-top: 150px;
     font-size: 60px;
-    font-family: monospace;
+    font-family: monospace;   
 }
 
 
@@ -143,14 +143,16 @@ input[type=text], select, textarea {
 
 
 .centered{
-	width:400px;
-	height:400px;
-	position:absolute;
-	top:70%;
-	left:50%;
+	border: 1px;
+	height: 100px;
+	position: relative;
+	top: 100%;
+	left: 50%;
 	transform:translate(-50%,-50%);
 	background: white;
 	filter: blur(10px) contrast(20);
+    margin-top: 100px;
+
 }
 .blob-1,.blob-2{
 	width:70px;
@@ -163,11 +165,11 @@ input[type=text], select, textarea {
 }
 .blob-1{
 	left:20%;
-	animation:osc-l 2.6s ease infinite;
+	animation:osc-l 2.7s ease infinite;
 }
 .blob-2{
 	left:80%;
-	animation:osc-r 2.6s ease infinite;
+	animation:osc-r 2.7s ease infinite;
 	background: rgb(255, 0, 191);
 }
 @keyframes osc-l{
