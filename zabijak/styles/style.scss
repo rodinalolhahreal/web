@@ -1,0 +1,244 @@
+//colors
+$color_bottle_green_approx: #0b3e28;
+$black_40: rgba(0, 0, 0, 0.4);
+$color_shamrock_approx: #2acc75;
+$black: black;
+$white: white;
+$color_fun_green_approx: #006748;
+$color_green_haze_approx: #00a05d;
+$color_silver_approx: #ccc;
+$color_purple_pizzazz_approx: rgb(255, 0, 191);
+
+//fonts
+$font_0: monospace;
+
+//urls
+$url_0: url(https://picsum.photos/1920/941);
+
+//@extend-elements
+//original selectors
+//input[type=text], select, textarea
+%extend_1 {
+	width: 100%;
+	padding: 12px;
+	border: 2px solid $color_silver_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+//original selectors
+//.blob-1, .blob-2
+%extend_2 {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	background: $black;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: translate(-50%,-50%);
+}
+
+
+.backg {
+	background-color: $color_bottle_green_approx;
+}
+.navbar-nav {
+	padding: 10px;
+	margin-right: 250px;
+	font-weight: 525;
+	font-size: 17px;
+}
+.q {
+	background-color: $black_40;
+}
+.col-lg-4 {
+	text-align: center;
+	margin: auto;
+}
+.text {
+	padding: 30px;
+}
+.rowz {
+	text-align: center;
+	margin: auto;
+	background-color: $color_shamrock_approx;
+}
+.card {
+	margin: auto;
+}
+.ods {
+	color: $black;
+	font-weight: bolder;
+	background-color: $color_green_haze_approx;
+	font-family: $font_0;
+	font-size: 18px;
+}
+.a {
+	background-color: $color_shamrock_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 12px;
+	margin: 5px;
+	padding: 18px;
+}
+.e {
+	background-color: $color_shamrock_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 12px;
+	margin: 5px;
+	padding: 18px;
+	margin-bottom: 120px;
+}
+.mrrg {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.flexbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+}
+.nadpis {
+	width: 100%;
+	background-color: $white;
+	text-align: center;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 600;
+}
+.qq {
+	padding-bottom: 150px !important;
+}
+.d {
+	margin-bottom: 50px;
+}
+.qwe {
+	margin-bottom: 70px;
+}
+h3 {
+	border-bottom-style: solid;
+	border-bottom-color: $color_fun_green_approx;
+	font-family: $font_0;
+}
+.abouta {
+	text-align: center;
+	align-self: center;
+	margin-top: 150px;
+	font-size: 60px;
+	font-family: $font_0;
+}
+input[type=text] {
+	@extend %extend_1;
+}
+select {
+	@extend %extend_1;
+}
+textarea {
+	@extend %extend_1;
+}
+input[type=submit] {
+	background-color: $color_bottle_green_approx;
+	color: $white;
+	padding: 12px 20px;
+	border: none;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+	cursor: pointer;
+	&:hover {
+		background-color: $color_fun_green_approx;
+	}
+}
+.container {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	background-color: $color_shamrock_approx;
+	padding: 20px;
+}
+.acont {
+	background-color: $color_fun_green_approx;
+}
+.magi {
+	margin-top: 75px;
+	margin-bottom: 75px;
+	font-family: $font_0;
+	font-weight: bold;
+}
+.centered {
+	border: 1px;
+	height: 100px;
+	position: relative;
+	top: 100%;
+	left: 50%;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: translate(-50%,-50%);
+	background: $white;
+	filter: blur(10px) contrast(20);
+	margin-top: 100px;
+}
+.blob-1 {
+	@extend %extend_2;
+	left: 20%;
+	animation: osc-l 2.7s ease infinite;
+}
+.blob-2 {
+	@extend %extend_2;
+	left: 80%;
+	animation: osc-r 2.7s ease infinite;
+	background: $color_purple_pizzazz_approx;
+}
+@keyframes osc-l {
+	0% {
+		left: 20%;
+	}
+	50% {
+		left: 50%;
+	}
+	100% {
+		left: 20%;
+	}
+}
+@keyframes osc-r {
+	0% {
+		left: 80%;
+	}
+	50% {
+		left: 50%;
+	}
+	100% {
+		left: 80%;
+	}
+}
+.textt {
+	font-family: $font_0;
+}
+.rndm {
+	background-image: $url_0;
+	max-width: 100%;
+	max-height: 100%;
+	overflow: hidden;
+}
+.centerbut {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 850px;
+}
+.lowerbut {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+}
+.birb {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

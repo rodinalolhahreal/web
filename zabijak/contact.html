@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+    <script src="./script.js">
+    </script>
+ </head>
+
+ <title>Kontakt</title>
+ <link rel="icon" href="./images/star.png" type="image/gif">
+
+
+<body class="acont">
+
+<nav class="navbar backg navbar-dark sticky-top font-navbar textt">
+    <!-- Brand -->
+    <a class="navbar-brand" href="https://muj-web.site/index">Home</a>
+    <a class="navbar-brand" href="https://muj-web.site/contact">Contact</a>
+    <a class="navbar-brand" href="https://muj-web.site/about">About</a>
+    <a class="navbar-brand" href="https://muj-web.site/rng">Random Img</a>
+    <a class="navbar-brand" href="prazdnej-ele"></a>
+
+  </nav>
+
+  <div class="container magi">
+    <form action="form_pro_zpravy">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="choose">Choose a country</option>
+        <option value="uk">United Kingdom</option>
+        <option value="us">USA</option>
+        <option value="cz">Czech Republic</option>
+        <option value="de">Germany</option>
+        <option value="fr">France</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Leave us a message" style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+  
+  <footer class="bgz text-center text-lg-start fixed-bottom ods">
+      <div class="text-center p-4 q">Vytvořil © Jan Hlaváček 2.C</div>
+    </footer>
+
+</body>
+</html>
